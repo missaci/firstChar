@@ -5,13 +5,8 @@ import java.util.Map;
 
 /**
  * 
- * Implementação para achar o primeiro char que não se repete em um Stream.
- * Foi usado um HashMap para mapeamento de contagem de repetição, por ser uma estrutura
- * de tempo de pesquisa constante.
- * Uma instancia de StringBuilder foi usada para manter a ordem dos caracters ao mesmo tempo
- * em que mantém a manipulação de uma estrutura de caracters rápida, diferentemente de usar diretamente
- * uma String.
- * 
+ * ImplementaÃ§Ã£o para achar o primeiro char que nÃ£o se repete em um Stream.
+ *  
  * @author Mateus
  *
  */
@@ -31,7 +26,7 @@ public class FirstCharFinder {
 			}
 		}
 		
-		throw new RuntimeException("Nenhum caracter que não se repita foi encontrado");
+		throw new RuntimeException("Nenhum caracter que nÃ£o se repita foi encontrado");
 	}
 
 	private static void readStreamContent(Stream stream, Map<Character, Integer> map, StringBuilder builder) {
